@@ -11,7 +11,8 @@ public class Fahrenheit extends Temperature {
 
     @Override
     public Temperature toCelsius() {
-        return new Fahrenheit((float)(5.0/9.0)*this.getValue()-32);
+        float temp = ((this.getValue() - 32) * 5) / 9;
+        return new Celsius(temp);
 
     }
 
