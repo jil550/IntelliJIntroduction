@@ -27,10 +27,10 @@ public class TemperatureConverter {
             switch(temp_in[1].toLowerCase().charAt(0))
             {
                 case 'c':
-                    inputTemp = new Temperature(temp_val);
+                    inputTemp = new Celsius(temp_val);
                     break;
                 case 'f':
-                    inputTemp = new Temperature(temp_val);
+                    inputTemp = new Fahrenheit(temp_val);
                     break;
                 default:
                     System.out.println("Invalid entry!!\n\n");
@@ -53,7 +53,7 @@ public class TemperatureConverter {
                     continue;
             }
 
-            System.out.println("\n The converted temperature is " + outputTemp.toString() +"\n\n");
+            System.out.println("\n The converted temperature is " + outputTemp +"\n\n");
         }
     }
 
