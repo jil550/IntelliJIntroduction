@@ -39,7 +39,7 @@
 
  <!-- Test and build all files -->
  <!-- To run this: use "ant" (default) or "ant run" -->
- <target name = "run" depends="build">
+ <target name="run" depends="build">
   <junit printsummary="on" haltonfailiure="yes">
     <classpath>
       <path refid="classpath.test" />
